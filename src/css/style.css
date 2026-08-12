@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "SpaceMono Nerd Font";
-  font-display: swap;
-  src:
-    local("SpaceMono Nerd Font"),
-    url(../fonts/SpaceMonoNF.woff2) format("woff2"),
-    url(../fonts/SpaceMonoNF.woff) format("woff");
-}
-
 :root {
   color-scheme: dark;
 }
@@ -35,24 +26,24 @@ body {
   display: flex;
   color: var(--text-color);
   font-family:
-    SpaceMono Nerd Font,
+    BlexMono Nerd Font,
+    IBM Plex Mono,
+    Symbols Nerd Font,
     monospace;
   justify-content: center;
   align-items: center;
 }
 
-#text,
 #image {
   opacity: 0;
   transition: opacity 0.2s ease-in;
 }
 
-#text.loaded,
 #image.loaded {
   opacity: 1;
 }
 
-#text.loaded * {
+#text * {
   transition: color 0.2s ease-in-out;
 }
 
@@ -85,7 +76,7 @@ body {
 #greeting {
   color: var(--accent-color-2);
   font-size: 2.5em;
-  font-weight: 900;
+  font-weight: 700;
   grid-column: 1/-1;
   text-align: center;
   display: grid;
@@ -102,9 +93,13 @@ body {
 }
 
 .header {
+  align-items: center;
   color: var(--accent-color);
+  display: flex;
   font-size: 1.6em;
   font-weight: 600;
+  font-style: italic;
+  gap: 0.4em;
 }
 
 #links {
@@ -135,5 +130,5 @@ a:hover {
 }
 
 #image {
-	padding-right: 1em;
+  padding-right: 1em;
 }
