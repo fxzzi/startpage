@@ -2,7 +2,7 @@
 
 Yet another minimal startpage (now with multitheme!):
 
-- Font: IBM Plex Mono with Nerd Fonts.
+- Font: Lilex with Nerd Fonts.
 - Colour Scheme(s): Tokyo Night, Colours derived from cover image
 
 > **NOTE**: keep in mind that I don't own any rights to the images included in
